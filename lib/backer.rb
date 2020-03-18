@@ -13,7 +13,7 @@ attr_reader :name
 
   def back_project(project)
     @backed_projects << project
-    
+    backer.backed_projects(self) unless backed_projects.include?(self)
   end
 
 end
