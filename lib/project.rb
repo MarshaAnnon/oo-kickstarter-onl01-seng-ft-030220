@@ -9,7 +9,7 @@ class Project
 
   def initialize(title)
     @title = title
-    @backers = backer
+    @backers = backers
 
 
   end
