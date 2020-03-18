@@ -13,7 +13,7 @@ attr_reader :name
 
   def back_project(project)
     @backed_projects << project
-    Project.backer << backer
+    project.backers << backer
   end
 
 end
