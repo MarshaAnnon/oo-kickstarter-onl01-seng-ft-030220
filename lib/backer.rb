@@ -16,8 +16,8 @@ attr_reader :name
   end
 
   def add_backer(name)
-    Project.backer.each {|backer| Project.backer << name}
- end
+    project.add_backer(self) unless project.backers.include?(self)
+  end
 
 
 
