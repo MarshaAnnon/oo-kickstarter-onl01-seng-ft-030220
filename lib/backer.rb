@@ -15,7 +15,7 @@ attr_reader :name
     @backed_projects << project
   end
 
-  end
+  
 
 
 
