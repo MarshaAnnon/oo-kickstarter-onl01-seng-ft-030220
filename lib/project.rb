@@ -14,6 +14,7 @@ class Project
 
   def add_backer(name)
     @backers << name
+    project.add_backer(self) unless project.backers.include?(self)
   end
 
 end
