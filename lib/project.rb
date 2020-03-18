@@ -2,8 +2,7 @@ require "pry"
 
 class Project
 
-  attr_accessor :backers
-  attr_reader :title
+  attr_reader :backers, :title
   @backers =[]
 
 
@@ -14,7 +13,7 @@ class Project
 
   def add_backer(name)
     @backers << name
-    backer.backed_projects(self) unless backer.backed_projects.include?(self)
+    
   end
   
 end
