@@ -15,12 +15,4 @@ attr_reader :name
     @backed_projects << project
   end
 
-  def add_backer(name)
-    project.add_backer(self) unless project.backers.include?(self)
-  end
-
-
-
-
-
 end
